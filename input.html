@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <title>Gathering Input</title>
      <!--<link rel="" />-->
+     <script>
+     function getName(){
+       var fullName;
+       fullName = document.getElementById("first").value;
+       document.getElementById("message").innerHTML = fullName;
+      }
+     </script>
   </head>
 <body>
   <input type="text" id="first">
   <input type="text" id="last">
   <button type="button" id="donebutton" onclick="getName();">Done</button>
   <p id="message"></p>
+
 </body>
 <!-- Darin Croft -->
 </html>
